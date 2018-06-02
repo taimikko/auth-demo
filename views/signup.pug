@@ -1,0 +1,8 @@
+include includes/head.pug
+include includes/navigation.pug
+.container
+  h1 Sign Up: Luodaan uusi käyttäjä (kaikki kelpaa)
+  form(action='/signup' method='post')
+    input(type='text' name='username')
+    input(type='password' name='password')
+    button(type='submit') Sign Up
